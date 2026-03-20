@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://milrac320.github.io/amaz/sitemap.xml

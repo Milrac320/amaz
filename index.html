@@ -2,16 +2,9 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N60D05H1RK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-N60D05H1RK');
-    </script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="imgs/logo.png" type="image/png" />
+    <script src="analytics.min.js"></script>
+    <link rel="stylesheet" href="style.min.css" />
+    <link rel="icon" href="imgs/logo.ico" type="image/ico" />
     <title>Hotel Amaz - Sua casa fora de casa em Ribeirão Preto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -23,6 +16,14 @@
     <meta property="og:image" content="imgs/faixada_maior.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://milrac320.github.io/amaz/" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; frame-src https://www.google.com https://maps.googleapis.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
     <link rel="preconnect" href="https://www.google.com" />
     <link rel="preconnect" href="https://maps.googleapis.com" />
   </head>
@@ -67,10 +68,11 @@
             </p>
 
             <div class="hero-ctas">
-              <a href="https://www.booking.com/hotel/br/amaz" target="_blank" class="btn">Reservar diária</a>
+              <a href="https://www.booking.com/hotel/br/amaz" target="_blank" rel="noopener noreferrer" class="btn">Reservar diária</a>
               <a
                 href="https://wa.me/551636329850"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn btn-outline"
                 >Falar no WhatsApp</a
               >
@@ -134,23 +136,19 @@
             </div>
             <div class="fundadora-text">
               <p>
-                O Hotel Amaz foi idealizado por
-                <strong>Isabel De Faria</strong>, que sempre acreditou que um
-                bom hotel começa pelo jeito de receber as pessoas. Antes de
-                abrir o hotel, ela já era conhecida no bairro pela maneira
-                calorosa com que recebia amigos, familiares e vizinhos em casa.
+                Em 12 de junho de 1992, inaugurou em nossa cidade a Pousada do Gaúcho.
+                Sob a direção da <strong>Dona Isabel</strong>, foi construído um nome forte em termos de hospedagens para empresas, que sempre trabalhou com muita dedicação e carinho, conquistando seu espaço e fidelizando muitos clientes que até hoje se hospedam conosco.
               </p>
               <p>
-                Ao criar o Hotel Amaz, sua intenção foi simples: oferecer um
-                lugar correto, tranquilo e honesto, no qual o hóspede fosse
-                tratado com respeito e discrição. Nada de exageros, apenas o
-                essencial bem feito — da arrumação dos quartos ao café da manhã
-                servido com calma.
+                Em 11 de Abril de 2021 perdemos nossa fundadora.
+                Neste período demos início então há uma nova administração, onde a Pousada do Gaúcho ganhou um novo nome, passando a se chamar Hotel Amaz.
               </p>
               <p>
-                Esse espírito ainda guia o hotel. Cada detalhe, do tom de voz na
-                recepção à forma de preparar o quarto, foi pensado para que quem
-                chega depois de um dia cheio possa, de fato, descansar.
+                Amaz é abreviação de Amazonas ou Amazona, que significa mulher guerreira, valente e destemida.
+                Não tinha nome melhor para homenagear a mulher mais destemida que já conhecemos, e quem convivia com a Dona Isabel, sabe o que estamos dizendo.
+              </p>
+              <p>
+                Perdê-la foi a pior coisa que nos aconteceu, porém manter o Hotel funcionando, nos padrões que ela nos ensinou, é o que nos fez continuar.
               </p>
               <div class="fundadora-name">Dona Isabel De Faria</div>
               <div class="fundadora-role">Fundadora do Hotel Amaz</div>
@@ -329,7 +327,7 @@
         <div class="container">
           <div class="section-header">
             <h2>Galeria</h2>
-            <p>Conheça os espaços do Hotel Amaz.</p>
+            <p>Conheça alguns dos espaços do Hotel Amaz.</p>
           </div>
 
           <div class="gallery-grid">
@@ -458,10 +456,10 @@
               para descansar em Ribeirão Preto, com o essencial bem cuidado.
             </p>
             <div class="cta-buttons">
-              <!-- Motor de reservas: troque o link abaixo pelo sistema que você utiliza -->
               <a
                 href="https://www.booking.com/hotel/br/amaz"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn"
               >
                 Reservar agora
@@ -469,6 +467,7 @@
               <a
                 href="https://wa.me/551636329850"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn btn-outline"
               >
                 WhatsApp
@@ -476,6 +475,7 @@
               <a
                 href="https://www.instagram.com/hotelamaz/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn btn-outline"
               >
                 Instagram
@@ -508,6 +508,6 @@
         <div>Rua Amazonas, 646 — Ribeirão Preto, São Paulo.</div>
       </div>
     </footer>
-    <script defer src="script.js"></script>
+    <script defer src="script.min.js"></script>
   </body>
 </html>
